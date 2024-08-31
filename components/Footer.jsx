@@ -108,7 +108,7 @@ const Footer = () => {
         <div className="col-12 text-center wow fadeInUp"  data-wow-duration="0.4s" data-wow-delay="0.4s">
           <div className="footer-bottom">
             <p className="text">
-              Copyrigth &copy; <a href="github/haroun">Haroun Barhoumi</a>
+              Copyrigth &copy; <a href="github/haroun">Team 8 DNA Data Storage</a>
             </p>
           </div>      
         </div>

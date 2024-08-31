@@ -12,8 +12,8 @@ const Feature = () => {
           <div className="section-head">
             <h4 className="lasthead">how does it works</h4>
             <h2 className="title">It's really easy</h2>
-            <p className="text">It's easier than you think,follow 3 simple easy steps </p>
-          </div>
+            <p className="text">Follow these 3 easy steps to store your data using our cutting-edge DNA technology.</p>
+            </div>
         </div>
 
         <div className="col-xl col-lg-6 text-center wow fadeInUp"
@@ -24,8 +24,8 @@ const Feature = () => {
             <div className="tumb">
               <img src="assets/img/feature-icon-1.png" alt="" />
             </div>
-            <p className="text">You choose the currency and <br />Payment Method</p>
-          </div>
+            <p className="text">Complete the necessary <br />verification process.</p>
+            </div>
         </div>
 
         <div div className="col-xl col-lg-6 text-center wow fadeInup"
@@ -46,8 +46,8 @@ const Feature = () => {
             <div className="tumb">
               <img src="assets/img/feature-icon-3.png" alt="" />
             </div>
-            <p className="text">Receive  <br />cryptocurrency</p>
-          </div>
+            <p className="text">Your data is securely stored <br />using DNA technology.</p>
+            </div>
         </div>
 
       </div>

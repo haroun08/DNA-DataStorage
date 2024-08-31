@@ -9,7 +9,7 @@ const Statistics = () => {
             <div className="icon">
               <img src="assets/img/offer-icon-1.png" alt="" />
             </div>
-            <p className="text">Extra Fast <br /> Transaction</p>
+            <p className="text">Extra Fast <br /> Conversion</p>
           </div>
         </div>
 
@@ -18,7 +18,7 @@ const Statistics = () => {
             <div className="icon">
               <img src="assets/img/offer-icon-2.png" alt="" />
             </div>
-            <p className="text">Secure <br /> Transaction</p>
+            <p className="text">Secure <br /> Storage</p>
           </div>
         </div>
 
@@ -27,7 +27,7 @@ const Statistics = () => {
             <div className="icon">
               <img src="assets/img/offer-icon-3.png" alt="" />
             </div>
-            <p className="text">No Limits on <br /> Exchange</p>
+            <p className="text">No Limits on <br /> Storage</p>
           </div>
         </div>
 
@@ -36,7 +36,7 @@ const Statistics = () => {
             <div className="icon">
               <img src="assets/img/offer-icon-4.png" alt="" />
             </div>
-            <p className="text">We have the best <br /> Exchange rate</p>
+            <p className="text">We have the best <br /> Storage rate</p>
           </div>
         </div>
 
@@ -48,7 +48,6 @@ const Statistics = () => {
             <div className="section-head text-center wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.3s">
               <h4 className="lasthead"> Our stats say more than any words</h4>
               <h2 className="title"> Today's Statistics</h2>
-              <p className="text">Just paragraph to formulate it</p>
             </div>
 
             <div className="row justify-content-center">
@@ -58,20 +57,22 @@ const Statistics = () => {
                     <img src="assets/img/stasictic-icon-1.png" alt=""/>
                   </div>
                   <div className="statis-content">
-                    <h3 className="suntitle">482</h3>
-                    <p className="text">Transaction Made</p>
+                    <h3 className="suntitle">3</h3>
+                    <p className="text">Storage done</p>
                   </div>
                 </div>
               </div>
 
-              <div className="col-xl-4 col-lg-6 wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.4s">
+              
+
+              <div className="col-xl-4 col-lg-6 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
                 <div className="statis-boxx">
                   <div className="icon">
                     <img src="assets/img/stasictic-icon-1.png" alt=""/>
                   </div>
                   <div className="statis-content">
-                    <h3 className="suntitle">ETH-BCH</h3>
-                    <p className="text">Today's champion pair</p>
+                    <h3 className="suntitle">2 Mins</h3>
+                    <p className="text">Average processing</p>
                   </div>
                 </div>
               </div>
@@ -82,11 +83,11 @@ const Statistics = () => {
                     <img src="assets/img/stasictic-icon-1.png" alt=""/>
                   </div>
                   <div className="statis-content">
-                    <h3 className="suntitle">12 Mins</h3>
-                    <p className="text">Average processing</p>
-                  </div>
+                    <h3 className="suntitle">215 Million GB</h3>
+                    <p className="text">IN  1 GRAM OF DNA</p>
+                    </div>
                 </div>
-              </div>
+              </div>             
             </div>
           </div>
         </div>

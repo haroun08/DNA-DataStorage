@@ -13,9 +13,8 @@ const Platfrom = () => {
               <div className="col-lg-9 text-center wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.3s">
                 <div className="section-head">
                   <h4 className="lasthead">About Us</h4>
-                  <h2 className="title"> The Online Cryptocurrency Exchange Platform</h2>
-                  <p>another text</p>
-                </div>
+                  <h2 className="title">The Cutting-Edge DNA Data Storage Platform</h2>
+                  </div>
               </div>
             </div>
           </div>

@@ -1,27 +1,29 @@
-import React,{useState,useEffect} from "react";
+import React from "react";
 import { IoCloseOutline } from "react-icons/io5";
 
-const Hero = (
-  setInputAmount ,
-  setLoader ,
+const Hero = ({
+  setInputAmount,
+  setLoader,
   setOpenToken,
   LOAD_TOKEN,
   token_1,
   token_2,
   setToken_1,
   setToken_2,
-  swap) => {
-  // reset button
+  swap
+}) => {
+  // Reset button
   const reset = () => {
     setToken_1("");
     setToken_2("");
   };
+
   return (
     <div className="banner" id="home" style={{backgroundImage: `url("assets/img/banner-bg.png")`}}>
       <div className="illustration">
-      <img src="assets/img/banner-bg-1.png" className="one" alt="" />
-      <img src="assets/img/banner-bg-2.png" className="two" alt="" />
-      <img src="assets/img/banner-map.png" className="three" alt="" />
+        <img src="assets/img/banner-bg-1.png" className="one" alt="" />
+        <img src="assets/img/banner-bg-2.png" className="two" alt="" />
+        <img src="assets/img/banner-map.png" className="three" alt="" />
       </div>
 
       <div className="hero-area"> 
@@ -29,18 +31,18 @@ const Hero = (
           <div className="row align-items-center justify-content-between">
             <div className="col-xl-7 col-lg-6">
               <div className="banner-content wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.3s">
-                <h3 className="subtitle">Fast and Convenient</h3>
-                <h1 className="head">CryptoCurrency Exchange</h1>
-                <p className="text">DNA as a service is a pltaform that can give you the ability to store your data in DNA </p>
+                <h3 className="subtitle">Revolutionary and Secure</h3>
+                <h1 className="head">DNA Data Storage</h1>
+                <p className="text">Our platform offers a groundbreaking way to store and manage your data using DNA technology. Experience unparalleled security and efficiency with our innovative service.</p>
               </div>
             </div>
 
-            <div className="col-xl-4 col-lg-6 wow fadeInRightBig" data-wow-delay="0.3s" wow-data-duration="0.5s">
+            <div className="col-xl-4 col-lg-6 wow fadeInRightBig" data-wow-delay="0.3s" data-wow-duration="0.5s">
               <div className="exchange">
-                <h5 className="ex-head">Cryptocurrency Exchange</h5>
+                <h5 className="ex-head">DNA Data Storage</h5>
                 <div className="exchange-box">
                   <div className="selector">
-                    <p className="text">Your Change</p>
+                    <p className="text">Current Storage</p>
                     <div className="coin">
                       <span>{token_1?.symbol}</span>
                     </div>
@@ -48,31 +50,30 @@ const Hero = (
 
                   <div>
                     <div className="form-group">
-                      <span onClick={()=> setOpenToken(true)}>Open</span>
-                      <input type="text" 
-                      placeholder={token_1?.symbol ||"select"} 
-                      className="form-control" 
-                      onChange={(e)=>setInputAmount(e.target.value)}/>
+                      <span onClick={() => setOpenToken(true)}>Import file</span>
+                      <input 
+                        type="text" 
+                        placeholder={token_1?.symbol || "select"} 
+                        className="form-control" 
+                        onChange={(e) => setInputAmount(e.target.value)}
+                      />
                     </div>
                   </div>
 
-                  {
-                    token_1 ? (
-                      <span className="rate">
-                        {`Balance : ${token_1?.balance.slice(0,10)}`}  ${token_1?.symbol}
-                      </span>
-                    ): (
-                      ""
-                    )
-                  }
+                  {token_1 ? (
+                    <span className="rate">
+                      {`Available Storage: ${token_1?.balance.slice(0, 10)}`} {token_1?.symbol}
+                    </span>
+                  ) : ""}
                 </div>
-                <a className="rotate">
-                  <img src="assets/img/exchange-img.png" alt="" onClick={()=> reset()}></img>
+                
+                <a className="rotate" onClick={() => reset()}>
+                  <img src="assets/img/exchange-img.png" alt="" />
                 </a>
 
                 <div className="exchange-box">
                   <div className="selector">
-                    <p className="text">You Get</p>
+                    <p className="text">DNA Conversion</p>
                     <div className="coin">
                       <span>{token_2?.symbol}</span>
                     </div>
@@ -80,26 +81,24 @@ const Hero = (
 
                   <div>
                     <div className="form-group">
-                      <span onClick={()=> setOpenToken(true)}>Open</span>
+                      <span onClick={() => setOpenToken(true)}>Download</span>
                       <input 
-                      type="text" 
-                      placeholder={token_2?.symbol ||"select"} 
-                      className="form-control" 
-                      onChange={()=>setOpenToken(true)}/>
+                        type="text" 
+                        placeholder={token_2?.symbol || "select"} 
+                        className="form-control" 
+                        onChange={() => setOpenToken(true)}
+                      />
                     </div>
                   </div>
 
-                  {
-                    token_2 ? (
-                      <span className="rate">
-                        {`Balance : ${token_2?.balance.slice(0,10)}`}  ${token_2?.symbol}
-                      </span>
-                    ): (
-                      ""
-                    )
-                  }
+                  {token_2 ? (
+                    <span className="rate">
+                      {`Available Storage: ${token_2?.balance.slice(0, 10)}`} {token_2?.symbol}
+                    </span>
+                  ) : ""}
                 </div>
-              <a onClick={()=>swap()} className="button button-1">Exchange</a>
+
+                <a onClick={() => swap()} className="button button-1">Store Data</a>
               </div>
             </div>
           </div>
